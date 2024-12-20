@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
 
-<t t-name="mail_custom_module.Chatter" t-inherit="mail.Chatter" t-inherit-mode="extension"  >
+<t t-name="mail_custom_module.button_controller" t-inherit="mail.Chatter" t-inherit-mode="extension"  >
 
 
 <xpath expr="//button[contains(@class,'o-mail-Chatter-sendMessage')]" position="after">
@@ -15,7 +15,7 @@
     }"
     t-att-disabled="!state.thread.hasWriteAccess and !(state.thread.hasReadAccess and state.thread.canPostOnReadonly) and props.threadId"
     data-hotkey="m"
-    t-on-click="() => this.toggleComposer('sms')">
+    t-on-click="() => this.onClickFollow()">
     Send SMS
 </button>
 <button t-if="props.hasMessageList" class="o-mail-Chatter-sendMessage btn text-nowrap me-1"

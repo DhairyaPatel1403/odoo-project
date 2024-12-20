@@ -13,6 +13,9 @@ import { isDragSourceExternalFile } from "@mail/utils/common/misc";
 import { RecipientList } from "./recipient_list";
 import { FollowerList } from "./follower_list";
 
+// import { toggleComposer2 } from 'custom_addons/mail_custom_module/static/src/components/button_controller';
+
+
 import {
     Component,
     markup,

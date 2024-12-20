@@ -141,6 +141,7 @@ For more specific needs, you may also assign custom-defined actions
             'mail/static/src/discuss/**/web/**/*',
             ('remove', 'mail/static/src/discuss/**/*.dark.scss'),
             'mail/static/src/views/fields/**/*',
+            'custom_addons/mail_custom_module/static/src/js/components/button_controller.js',
         ],
         "web.dark_mode_assets_backend": [
             'mail/static/src/**/*.dark.scss',
